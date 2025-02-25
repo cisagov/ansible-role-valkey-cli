@@ -295,7 +295,7 @@ jobs:
       # future, it makes sense to simply disable AppArmor altogether
       # before running Molecule tests.
       - name: Disable AppArmor
-        uses: cisagov/action-disable-apparmor@first-commits
+        uses: cisagov/action-disable-apparmor@v1
       - name: Run molecule tests
         run: >-
           molecule test
