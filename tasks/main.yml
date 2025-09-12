@@ -10,6 +10,15 @@
       paths:
         - "{{ role_path }}/vars"
 
+# The valkey-tools package is only offered in the backports package
+# repository on Debian Bookworm.
+- name: Setup backports
+  ansible.builtin.include_role:
+    name: backports
+  when:
+    - ansible_distribution == "Debian"
+    - ansible_distribution_release in ["bookworm"]
+
 - name: Install valkey-cli
   ansible.builtin.package:
     name: "{{ package_names }}"

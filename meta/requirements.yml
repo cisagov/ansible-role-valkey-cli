@@ -4,4 +4,5 @@
 # be specified here.
 #
 # See also cisagov/ansible-role-valkey-cli#153.
-[]
+- name: backports
+  src: https://github.com/cisagov/ansible-role-backports
