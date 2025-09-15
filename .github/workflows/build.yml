@@ -217,14 +217,18 @@ jobs:
           - arm64
         platform:
           - amazonlinux2023-systemd
-          - debian10-systemd
-          - debian11-systemd
+          # Debian Buster and Bullseye do not offer the valkey-tools
+          # package, even in the backports package repository.
+          # - debian10-systemd
+          # - debian11-systemd
           - debian12-systemd
           - debian13-systemd
           - fedora41-systemd
           - fedora42-systemd
           - kali-systemd
-          - ubuntu-22-systemd
+          # Ubuntu Jammy does not offer the valkey-tools package, even
+          # in the backports package repository.
+          # - ubuntu-22-systemd
           - ubuntu-24-systemd
         scenario:
           - default
