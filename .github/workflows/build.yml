@@ -259,7 +259,7 @@ jobs:
         uses: cisagov/setup-env-github-action@develop
       - uses: actions/checkout@v5
       - id: setup-python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ steps.setup-env.outputs.python-version }}
       - uses: actions/cache@v4
