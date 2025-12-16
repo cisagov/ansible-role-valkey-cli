@@ -1,6 +1,7 @@
 # ansible-role-valkey-cli #
 
 [![GitHub Build Status](https://github.com/cisagov/ansible-role-valkey-cli/workflows/build/badge.svg)](https://github.com/cisagov/ansible-role-valkey-cli/actions)
+[![License](https://img.shields.io/github/license/cisagov/ansible-role-valkey-cli)](https://spdx.org/licenses/)
 [![CodeQL](https://github.com/cisagov/ansible-role-valkey-cli/workflows/CodeQL/badge.svg)](https://github.com/cisagov/ansible-role-valkey-cli/actions/workflows/codeql-analysis.yml)
 
 An Ansible role for installing the Valkey client CLI.
