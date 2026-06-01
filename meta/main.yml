@@ -45,5 +45,6 @@ galaxy_info:
         # in the backports package repository.
         # - jammy
         - noble
+        - resolute
   role_name: valkey_cli
   standalone: true
